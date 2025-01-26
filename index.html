@@ -1,114 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>About Me</title>
+  <head>
+    <title>About Me!</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .header
-        {
-            background: #b9b7b7;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .profile-picture
-        {
-            width: 50px;
-            height: 50px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .main-info {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        .main-info h1 {
-            margin: 0;
-        }
-        .hobbies, .lewis, .course, .job, .fun-fact {
-            background: #e7e7e7;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
+    body
+    {
+      background-color: #EDDBC7;
+    }
+      .Header-Section
+      {
+        font-family: Consolas;
+        padding: 10px;
+        background-color: #AEC2B6;
+      }
+      .Social-Links
+      {
+        display: grid;
+        grid-template-columns: 20% 33% 33%;
+      }
+      .Profile-Section
+      {
+        font-family: Arial;
+        padding: 20px;
+        background-color: #F8EDE3;
+        margin-top: 10px;
+        margin-bottom: 10px;;
+      }
+      .Profile-Elements
+      {
+        display: grid;
+        grid-template-columns: 25% 75% 0%;
+        font-size: 13px;
+      }
+      .Why-COE420
+      {
+        font-family: Arial;
+        padding: 20px;
+        background-color: #F8EDE3;
+      }
+      .Why-COE420-Elements
+      {
+        display: grid;
+        grid-template-columns: 77% 5% 0%;
+        font-size: 13px;
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h3>
-                Welcome to John Benedict's Corner of the Internet
-            </h3>
-            <a href="mailto:b00094038@aus.edu">
-                My AUS Email Address
-            </a>
-            <p>My Discord Username: toshiscorner_51157</p>
-        </header>
-        <header class="main-info">
-            <h1>John Benedict Alianza</h1>
-            <h1>Preferred Name: John</h1>
-        </header>
-    
-        <section class="profile-picture">
-            <img src="website header gif.gif">
-        </section>
-
-        <section class="lewis">
-			<h2>Year at AUS: Fourth Year, First Semester</h2>
-			<h2>AUS Major: Computer Engineering</h2>
-			<h2>Reasons for pursuing this degree:</h2>
-			<p>
-			    I'm not super attached to my degree, and given a chance to travel back in time, I would definitely
-			    look at other options, but I'm in it for the long haul and I'm nothing if not persistent.
-			</p>
-        </section>
-
-		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
+  </head>
+  <body>
+    <div class="container;">
+      <header class="Header-Section">
+        <h2 style="color:white">
+          Welcome to John Benedict's Corner of the Internet
+        </h2>
+        <div class="Social-Links">
+          <a href="mailto:b00094038@aus.edu">My AUS ID</a>
+          <a href="https://www.instagram.com/j_benedict_alianza/?hl=en">My Videography Profile</a>
+          <a href="">Another Link Here</a>
+        </div>
+      </header>
+      <header class="Profile-Section">
+        <div class="Profile-Elements">
+          <img src="website header gif.gif" style="width: 150px; height: 150px;">
+          <div>
+            <p>Hey, my name's John Benedict Alianza</p>
             <p>
-                While this course is a graduation requirement, hence the need to take it, I do find myself intrigued
-                by the more 'macro-focused' approach that this course takes on learning about software development. 
-            </p>
-        </section>
-
-		<section class="job">
-            <h2>Current/Recent Job</h2>
-			<p>
-			    Full-Time Student, Hobbyist Videographer, and Aspiring Filmmaker
-			</p>
-        </section>		
-
-        <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>
-                I indulge myself in a multitude of aspects concerned with filmmaking and videography, particularly
-                shooting, editing, and color grading videos.
-            </p>
-        </section>
-
-        <section class="fun-fact">
-            <h2>Fun Fact</h2>
-            <p>
-                Although I did say I spare no particular attachment to my degree, halfway through, I did start
-                taking it seriously, resulting in me spending 1,957 hours studying in 2023 and 2024.
+              I'm a 4th-year Computer Engineering student from the Philippines, with 6 of my 22 years of life spent in Dubai.
             </p>
             <p>
-                I think that's a lot of time, you think so?
+              I'm not super attached to my degree, and given a chance to travel back in time, I would definitely look at other 
+              options, but I'm in it for the long haul and I'm nothing if not persistent.
             </p>
-        </section>
-        <header class="last-updated">
-            <p>Last updated on 25/01/2025</p>
-        </header>
+          </div>
+        </div>
+      </header>
+      <header class="Why-COE420">
+        <div class="Why-COE420-Elements">
+          <div>
+            <h4>
+              Why Am I Taking Software Engineering?
+            </h4>
+            <p>
+              Yeah, it's a major requirement to complete the degree, I know.
+            </p>
+            <p>
+              But... I am definitely intrigued by the hands-on focus approach we might get from this course. I am sick of
+              doing midterms after midterms just for finals to bomb my grade and drop me a letter or two.
+            </p>
+          </div>
+          <img src="https://i.giphy.com/VbnUQpnihPSIgIXuZv.webp" style="width: 150px; height: 150px">
+        </div>
+      </header>
     </div>
-</body>
+  </body>
 </html>
