@@ -1,114 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .header
-        {
-            background: #b9b7b7;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .profile-picture
-        {
-            width: 50px;
-            height: 50px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .main-info {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        .main-info h1 {
-            margin: 0;
-        }
-        .hobbies, .lewis, .course, .job, .fun-fact {
-            background: #e7e7e7;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hi, I'm John</title>
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact-links">Contact</a>
+        </nav>
+
+        <a href="#" class="logo">BenFindsWhimsy</a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-image">
+            <img src="https://github.com/ToshisCorner/Introduction-Website-for-COE490/blob/main/me-800-by-800.gif?raw=true" alt="Profile Picture" onclick="open_thumbnail()">
+            
+            <script>
+                function open_thumbnail()
+                {
+                    var thumbnail_url = "https://github.com/ToshisCorner/Introduction-Website-for-COE490/blob/main/me-300-by-300.gif?raw=true";
+                    window.open(thumbnail_url, '_blank');
+                }
+            </script>
+        </div>
+        
+        <div class="home-content" id="home-content">
+            <h1>
+                Hey, my name's <span>John Benedict Alianza</span>
+            </h1>
             <h3>
-                Welcome to John Benedict's Corner of the Internet
+                Welcome to my corner of the internet!
             </h3>
-            <a href="mailto:b00094038@aus.edu">
-                My AUS Email Address
-            </a>
-            <p>My Discord Username: toshiscorner_51157</p>
-        </header>
-        <header class="main-info">
-            <h1>John Benedict Alianza</h1>
-            <h1>Preferred Name: John</h1>
-        </header>
+            <p>
+                The quick rundown goes: Filipino, moved to Bahrain for middle school, back to the Philippines for highschool, then moved to Dubai to end off my highschool to (hopefully) complete 
+                my college degree. 
+            </p>
+            <div class="home-description-container">
+                <h4>
+                    Fun Fact About Me:
+                </h4>
+                <p>
+                    Although I go by John, my actual name is John Benedict. John comes from the name of St. John Paul II, and Benedict is the name of the next pope that came to be in 2005,
+                    3 years after my birthday. Either my parents predicted that or they're time travelers.
+                </p>
+            </div>
+        </div>
+    </section>
     
-        <section class="profile-picture">
-            <img src="website header gif.gif">
-        </section>
+    <section class="education" id="education">
+        <h3>
+            Education
+        </h3>
+        <div class="education-container">
+            <div>
+                <p>
+                    I'm currently a 4th year Computer Engineering student at the American Universirty of Sharjah. I can't say I'm super attached to my degree to be honest.
+                    If I had the chance to go back in time, I'd definitely look at other options, BUT, I'm already in it for the long haul, and I'm nothing if not consistent. :D
+                </p>
+                <h4>
+                    ● Why Am I Taking Software Engineering?
+                </h4>
+                <p>
+                    Yes, this course is a graduation requirement and I took it cause I have to, but now that I'm informed of the learning approach we have for this course, I'm excited.
+                    It's not everyday you get to hop into a course and grab most of your grades from practical stuff, it's a new challenge and a refreshing take for the semester.
+                </p>
+                <h4>
+                    ● What do I Hope to Learn from this Course?
+                </h4>
+                <p>
+                    To be completely honest, I've never been a big fan of coding/programming, so software engineering was a hard sell for me. I know like 2 programming languages (+1 cause I
+                    learned HTML to make this website :3), and it wouldn't hurt to learn a few more before I graduate. I'm more interested in actually getting to know the approach to ideation,
+                    building, and testing software in a kind-of real-world scenario environment.    
+                </p>
+            </div>
+            <img src="https://github.com/ToshisCorner/Introduction-Website-for-COE490/blob/main/me-at-aus.jpg?raw=true" alt="John at AUS">
+        </div>
+    </section>
 
-        <section class="lewis">
-			<h2>Year at AUS: Fourth Year, First Semester</h2>
-			<h2>AUS Major: Computer Engineering</h2>
-			<h2>Reasons for pursuing this degree:</h2>
-			<p>
-			    I'm not super attached to my degree, and given a chance to travel back in time, I would definitely
-			    look at other options, but I'm in it for the long haul and I'm nothing if not persistent.
-			</p>
-        </section>
+    <section class="hobbies" id="hobbies">
+        <h3>
+            Hobbies
+        </h3>
+        <div class="hobbies-container">
+            <div class="videography">
+                <h4>
+                    Videography/Filmmaking
+                </h4>
+                <p>
+                    I shot, edited, and 'color-graded' my first video a year into university. I borrowed my dad's gimbal on a whim and took videos of a family outing. From there, I kept shooting
+                    more and more of my life, learning more editing and color grading techniques, and having the most fun I've ever had doing anything.
+                </p>
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/0XgDjdGNbII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    Here's the most recent thing I've done. I like how it turned out but I'm already thinking about how to make the next video with more polish and pizzazz. :D 
+                </p>
+                <p>
+                    If you wanna see more of what I do, check out my account: BenFindsWhimsy <a href="https://www.instagram.com/benfindswhimsy/" class="fa-brands fa-instagram" target="_blank"></a>
+                </p>
+            </div>
+            <div class="studying">
+                <h4>
+                    Studying (YES, I KNOW)
+                </h4>
+                <p>
+                    Before you tell me of, "Studying isn't a hobby, you know.", "What's so fun about it?", "Are you really that boring?"
+                </p>
+                <p>
+                    I know. When you reframe the way you approach studying, anyone can find it fun. Yes, I am most likely that boring. 
+                </p>
+                <p>
+                    For real though, I do find pleasure in extended hours of studying. I don't find myself more productive, just that studying can occupy more of my time without me burning out
+                    or feeling like I've wasted my time.
+                </p>
+                <img src="https://github.com/ToshisCorner/Introduction-Website-for-COE490/blob/main/forest%202023%20stats.png?raw=true" alt="My 2023 Forest Stats">
+            </div>
+        </div>
+    </section>
 
-		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
+    <section class="contact-links" id="contact-links">
+        <div class="contact-container">
+            <h1>
+                If you wanna contact me, feel free to at these links!
+            </h1>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/john-benedict-alianza/" class="fa-brands fa-linkedin" target="_blank"></a>
+                <a href="https://github.com/ToshisCorner" class="fa-brands fa-github" target="_blank"></a>
+                <a href="https://discordapp.com/users/1230421696436113459" class="fa-brands fa-discord" target="_blank"></a>
+                <a href="https://www.instagram.com/j_benedict_alianza/" class="fa-brands fa-instagram" target="_blank"></a>
+            </div>
             <p>
-                While this course is a graduation requirement, hence the need to take it, I do find myself intrigued
-                by the more 'macro-focused' approach that this course takes on learning about software development. 
+                ✉️ AUS Email: <a href=mailto:b00094038@aus.edu class="student-email" target="_blank">b00094038@aus.edu</a>
             </p>
-        </section>
-
-		<section class="job">
-            <h2>Current/Recent Job</h2>
-			<p>
-			    Full-Time Student, Hobbyist Videographer, and Aspiring Filmmaker
-			</p>
-        </section>		
-
-        <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>
-                I indulge myself in a multitude of aspects concerned with filmmaking and videography, particularly
-                shooting, editing, and color grading videos.
-            </p>
-        </section>
-
-        <section class="fun-fact">
-            <h2>Fun Fact</h2>
-            <p>
-                Although I did say I spare no particular attachment to my degree, halfway through, I did start
-                taking it seriously, resulting in me spending 1,957 hours studying in 2023 and 2024.
-            </p>
-            <p>
-                I think that's a lot of time, you think so?
-            </p>
-        </section>
-        <header class="last-updated">
-            <p>Last updated on 25/01/2025</p>
-        </header>
-    </div>
+        </div>
+    </section>
 </body>
 </html>
