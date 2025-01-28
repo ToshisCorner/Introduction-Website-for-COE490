@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html
+{
+    font-size: 62.5%; /* something to do with relative sizing */
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    
+    background-image: url('https://github.com/ToshisCorner/Introduction-Website-for-COE490/blob/main/kenrick-mills-MF9Wy1NA55I-unsplash.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: white;
+}
+header
+{
+    margin-top: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%; /* 1 times the root font-size (relative sizing) */
+
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo
+{
+    font-size: 3rem;
+    color: #f09990;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover
+{
+    transform:scale(1.1);
+}
+
+nav a
+{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a:active
+{
+    color:#f09990;
+    border-bottom: #f09990 solid;
+}
+
+@media(max-width: 995px)
+{
+    nav
+    {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        
+        border-left: 3px solid #f09990;
+        border-bottom: 3px solid #f09990;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #5e8d97;
+        border-top: 0.1rem solid #5e8d97;
+    }
+    nav.active
+    {
+        display: block;
+    }
+    nav a
+    {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover, nav a:active
+    {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #f09990;
+    }
+}
+
+section
+{
+    min-height: 70vh;
+    padding: 2rem 9% 2rem;
+}
+
+/*
+    -----------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 8rem;
+    padding-top: 15rem;
+}
+
+.home-content h1
+{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span
+{
+    color: #f09990;
+}
+
+.home-content h3
+{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.home-content p
+{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-indent: 2rem;
+    margin-right: 2rem;
+}
+
+.home-image
+{
+    border-radius: 50%;
+}
+
+.home-image img
+{
+    position: relative;
+    width: 15vw;
+    border-radius: 10%;
+    box-shadow: 0 0 25px solid #f09990;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-image img:hover
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.home-description-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.home-description-container h4
+{
+    font-size: 2rem;
+}
+
+/*
+    -----------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.hobbies
+{
+
+}
+
+.hobbies-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 8rem;
+    align-items: stretch;
+}
+
+.hobbies h3
+{
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 2rem;
+    background-color: #f09990;
+    border-radius: 15px;
+}
+
+.videography, .studying
+{
+    padding: 4rem;
+    background-color: aliceblue;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.videography a
+{
+    color: #5e8d97;
+    margin: -2rem;
+}
+
+.videography a:hover
+{
+    color: #f09990;
+    transform: scale(1.1), transitionY(-10px);
+    transition: 0.3s ease;
+}
+
+.videography iframe
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.hobbies h4
+{
+    font-size: 2rem;
+    color: #5e8d97;
+}
+
+.hobbies p
+{
+    color: #5e8d97;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 3rem;
+    margin-top: 2rem;
+}
+
+.hobbies img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 15vw;                   /* Resize the image to 30% of the viewport width on tablets */
+    max-width: 100%;
+    height: auto;  
+    border-radius: 15px;
+}
+
+/*
+    -----------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.education
+{
+
+}
+
+.education-container
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 4rem;
+
+    border: #f09990 solid;
+    border-radius: 15px;
+}
+
+.education-container img
+{
+    position: relative;
+    width: 15vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 25px solid #f09990;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.education h3
+{
+    margin-left: 2rem;
+    color: aliceblue;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 2rem;
+    background-color: #f09990;
+    border-radius: 15px;
+}
+
+.education h4
+{
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.education p
+{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 3rem;
+}
+
+/*
+    -----------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.social-icons a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #f09990;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color:aliceblue
+}
+
+.social-icons a:hover
+{
+    color: #5e8d97;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #f09990;
+    box-shadow: 0 0 25px #f09990;
+}
+
+.contact-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.student-email
+{
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+
+.student-email:hover
+{
+    color: #f09990;
+    border-bottom: #f09990 solid;
+}
+
+.contact-container
+{
+    border:#f09990 0.2rem solid;
+    border-radius: 15px;
+    padding: 5rem;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links h1
+{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.contact-links p
+{
+    font-size: 1.7rem;
+}
+
+/*
+    -----------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media(max-width: 1000px)
+{
+    .home
+    {
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px)
+{
+    .home
+    {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home-content h3
+    {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1
+    {
+        font-size: 5rem;
+    }
+
+    .home-content img
+    {
+        margin-top: 4rem;
+    }
+}
+
+/* Responsive styling using media queries */
+@media (max-width: 768px) {  /* For devices with screen width <= 768px (tablets and smaller) */
+    .education-container {
+        flex-direction: row;           /* Keep the layout in a row (side by side) */
+        align-items: center;           /* Center items vertically */
+        padding: 2rem;                 /* Reduce padding */
+    }
+
+    .education-container img {
+        width: 30vw;                   /* Resize the image to 30% of the viewport width on tablets */
+        max-width: 100%;
+        height: auto;                  /* Ensure height remains proportional */
+    }
+
+    .education h3 {
+        font-size: 2.5rem;             /* Adjust the font size for smaller devices */
+        margin-left: 0;
+    }
+
+    .education p {
+        font-size: 1.3rem;             /* Adjust the font size */
+        text-indent: 1rem;             /* Adjust text indentation */
+    }
+
+    .education h4 {
+        font-size: 1.8rem;             /* Adjust heading size */
+    }
+}
+
+@media (max-width: 480px) {  /* For smaller devices (mobile phones) */
+    .education-container {
+        flex-direction: row;           /* Keep content side by side */
+        padding: 1rem;                 /* Further reduce padding */
+        gap: 1rem;                     /* Reduce space between the elements */
+    }
+
+    .education-container img {
+        width: 40vw;                   /* Resize image to 40% of the viewport width on mobile */
+        height: auto;                  /* Ensure the height is proportional */
+    }
+
+    .education h3 {
+        font-size: 2rem;               /* Further reduce the heading size */
+    }
+
+    .education p {
+        font-size: 1.2rem;             /* Adjust font size for better readability */
+    }
+
+    .education h4 {
+        font-size: 1.6rem;             /* Adjust heading size */
+    }
+}
